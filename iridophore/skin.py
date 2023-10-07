@@ -253,7 +253,8 @@ class Skin(object):
           - 'current_app', the current Flask app object
           - 'skin', “self”
         """
-        return { "g": g,
+        return { "app": app,
+                 "g": g,
                  "session": session,
                  "request": request,
                  "current_app": app,
